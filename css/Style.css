@@ -62,3 +62,7 @@ p{
 #peq{
     font-size: small;
 }
+#servicios{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,64 @@
+
+body{
+    background-color: rgb(24, 178, 165);
+    margin: 3% 20% 5% 20%;
+    padding:auto ;
+}
+
+
+header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+main{
+    border-radius: 1%;
+    padding: 2% 5% 2% 5%;
+    background-color: rgb(246, 243, 212); 
+    width: 80%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.clase1{
+    display: flex;
+    flex-direction: column;
+}
+
+#name , #email, #number
+ {
+    margin-bottom: 2%;
+}
+
+
+#surveyform{
+    margin: 3% 5% 5% 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#title{
+    font-weight: 500;
+    font-size: xxx-large;
+    margin-bottom: 2%;
+}
+#description{
+    font-size: x-large;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+input, select {
+    font-size: large;
+    font-family:  Georgia, 'Times New Roman', Times, serif;;
+
+}
+hr{
+    color: black;
+    margin-top: 0;
+}
+p{
+    margin-bottom: 0;
+}
+#peq{
+    font-size: small;
+}

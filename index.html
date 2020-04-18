@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/Style.css" rel="stylesheet" type="text/css"/>
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <header>
+        <p id="title">Formulario de Conectividad.</p>
+        <p id="description"><i>Al llenar este formulario nos estaras ayudando a conocerte tus necesidades en el tema de conectividad para recibir clases en linea.</p></i>
+    </header>
+    <main>
+        <form id="surveyform">
+            <div class="clase1">
+            <label for="name" id="name-label">1) Nombre*</label>
+            <input type="text" id="name" required placeholder="Ingrese su nombre completo ">
+            <label for="email" id="email-label">2) Email*</label>
+            <input type="email" id="email" required placeholder="Ingrese su direccion de email">
+            <label for="number" id="number-label">3) Numero</label>
+            <input type="number" id="number" min="3000000000" max="3599999999" placeholder="Ingrese su numero de Celular"> 
+            <label for="dropdown" id="dropdown">4) Seleccione su equipo para recibir clases.</label>
+            <select id="dropdown" class="seleccionar">
+                <option value="">Seleccione una opciòn.</option>
+                <option value="PCp">Computador Portatil</option>
+                <option value="PC">Computador de escritorio</option>
+                <option value="Cel">Celular</option>
+                <option value="Table">Tableta</option>
+                <option value="Ninguno">Ninguno</option>
+                <option value="Otro">Otro</option>
+            </select>
+            </div>
+            <div id="estrato">
+                <p>
+                    5) Selecciona el estrato economico de tu casa.
+                </p><hr>
+                <label for="1">1</label>
+                <input type="radio" name="estrato" id="1" value="1">
+                <label for="2">2</label>
+                <input type="radio" name="estrato" id="2" value="2">
+                <label for="3">3</label>
+                <input type="radio" name="estrato" id="3" value="3">
+                <label for="4">4</label>
+                <input type="radio" name="estrato" id="4" value="4">
+                <label for="5">5</label>
+                <input type="radio" name="estrato" id="5" value="5">
+                <label for="6">6</label>
+                <input type="radio" name="estrato" id="6" value="6">
+            </div>
+            <div id="servicios">
+                <p>6) Seleccione los servicios con los que cuente en su hogar.</p><hr>
+                <label><input type="checkbox" name="Servicios" value="Luz">Luz</label>
+                <label><input type="checkbox" name="Servicios" value="Agua">Agua</label>
+                <label><input type="checkbox" name="Servicios" value="Acueducto">Acueducto</label>
+                <label></label><input type="checkbox" name="Servicios" value="Gas">Gas</label>
+                <label></label><input type="checkbox" name="Servicios" value="Telefono">Telefono</label>
+                <label></label><input type="checkbox" name="Servicios" value="Internet">Internet</label>
+                
+            </div>
+            <div>
+                <p>7) Si tienes alguna necesidad adicional o comentario por favor dejalo escrito en el siguiente espacio:</p>
+                <textarea name="texto" id="texto" placeholder="Comentarios" cols="30" rows="10"></textarea>
+            </div>
+            <p>
+                <input type="submit" value="Enviar" id="submit">
+                <input type="reset" value="Borrar">
+            </p>
+            <p style="color:red" id="peq">Los puntos señalados con * son obligatorios</p>
+        </form>
+    </main>
+    
+</body>
+</html>
